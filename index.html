@@ -1,0 +1,267 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta app</title>
+<style>
+p
+{
+	border-color:black;
+	border-width:10px;
+	white-space:300px;
+}
+p.none{border-style:none;}
+p.dotted{border-style:dotted;}
+p.dashed{border-style:dashed;}
+p.solid{border-style:solid;}
+p.double{border-style:double;}
+p.groove{border-style:groove;}
+p.ridge{border-style:ridge;}
+p.inset{border-style:inset;}
+p.outset{border-style:outset;}
+p.hidden{border-style:hidden;}
+</style>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/1a.jpg','imagenes/v.v.png','imagenes/p2.jpg','imagenes/v2.jpg','imagenes/j2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="a">
+<h1><font face="OCR A Std">DÍA DE LA TIERRA</font> </h1>
+</div>
+<div data-role="main" class="ui-content" align="center" >
+  <p class="dashed"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sus1','','imagenes/1a.jpg',1)"><img src="imagenes/1.jpg" id="sus1" aling="center"></a></p> 
+  </div>
+  
+  <div data-role="collapsible" data-content-theme="false" style="width:300px;">
+<h1>NOTA</h1>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/j2.jpg',1)"><img src="imagenes/j1.jpg" align="right" id="Image12"></a>
+<center>
+  De acuerdo con los datos de la Organización Mundial de la Salud (OMS), en el año 2012 perdieron la vida en el mundo aproximadamente siete millones de personas por enfermedades relacionadas con la contaminación del aire. Según estadísticas, una de cada ocho personas muere por inhalar aire contaminado en su propio hogar; la mayoría de los afectados suelen ser los niños y las mujeres, quienes sin darse cuenta están en permanente contacto con la muerte.
+</center>
+<a href="http://www.wwf.org.mx/?gclid=CNaN4bP2s8wCFQqKaQod7cgBug" target="_self"><img src="imagenes/wwf.jpg"></a>
+<table width="100">
+<tr>
+<td>
+<font size="-3">Para mas informacion clic en la imagen.<img src="imagenes/manita.png"></font>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r" >
+<h2><font face="Lucida Calligraphy">¿Por qué se celebra?</font></h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r" >
+<h2><font face="Lucida Calligraphy">Cuidados del medio ambiente</font></h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r" >
+<h2><font face="Lucida Calligraphy">Tipos de contaminación </font></h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2><font face="Lucida Calligraphy">Contaminacion en mi comunidad</font></h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2><font face="Lucida Calligraphy">Contaminacion en mi comunidad</font></h2>
+</a>
+</li>
+</ul>
+</div>
+<br>
+<center><font face="OCR A Std">Por un mundo mas limpio</font><br><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/p2.jpg',1)"><img src="imagenes/p1.jpg" width="320" height="320" id="Image10"></center></a>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4> <strong>App5</strong><br>"Cruz Solis Rodolfo"</h4>
+</div>
+  </div>
+  
+  
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h2><font face="DotumChe">¿Por qué se celebra?</font></h2>
+  </div>
+  <div data-role="content">
+  <div>
+ El 22 de abril se celebra el Día Mundial de la Tierra. Esta fecha fue elegida porque el 22 de abril de 1970 una manifestación en Estados Unidos para que se creara en el Gobierno una agencia ambiental que trabaje sobre las problemáticas medioambientales.
+<img src="imagenes/2.jpg" align="center">
+El impulsor de la protesta fue el senador y activista ambiental Gaylord Nelson, quien convocó a miles de universidades, escuelas primarias y secundarias entre otras comunidades a participar del pedido. Gracias a la expresión social el Ejecutivo estadounidense creó Environmental Protection Agency (Agencia de Protección Ambiental) y varias leyes de protección del medio ambiente.
+  </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <h4> <strong>App5</strong><br>"Cruz Solis Rodolfo"</h4>
+  </div>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h2><font face="DotumChe">Cuidados</font></h2>
+ </div>
+<div data-role="content" >
+ <div>
+ <b>Consejos para cuidar el medio ambiente.</b>
+<br>
+<b>1.-</b> Antes de comprar un producto, hazte la pregunta si realmente lo necesitas. Cualquier consumo innecesario es en esencia antiecológico y antieconómico, ¿no lo crees?.
+<br>
+<b>2.-</b> Sé crítico con la publicidad. Mira las cualidades de los productos, no los sueños que te venden en la publicidad muchas veces engañosa.
+<br>
+<b>3.-</b>  Antes de tirar cualquier cosa a la basura, piensa si se puede reutilizar, reciclar o reparar, o si puede ser útil para otra persona.
+<br>
+<b>4.-</b>  Evita las latas de bebidas, vale más el envase que su contenido y apenas se recuperan. La energía necesaria para producir y transportar una lata equivale a la mitad del bote lleno de petróleo.
+<br>
+<b>5.-</b>  La energía que producen las pilas es más de 600 veces más cara que la de la red. Conecta los aparatos a la red siempre que esto sea posible. Si te es imprescindible usar pilas (nunca tires las usadas a la basura), procura que sean recargables.
+<br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/v.v.png',1)"><img src="imagenes/w.w.PNG" align="center" id="Image7"></a> <b>6.-</b>  Desconecta los aparatos eléctricos de la red cuando no están funcionando. Algunos aparatos (como televisores) siguen gastando hasta un 33% de la energía.
+<br>
+<b>7.-</b>  Prescinde de los electrodomésticos innecesarios como cepillos de dientes, abrelatas, cuchillos eléctricos, etc. Son mas cómodos algunos pero ninguno se iguala al sentimiento de hacerlo manualmente y saber que ahorraste miles de kilogramos de gases contaminantes que pudieron haberse liberado en alguna fábrica …China, seguro. Ten encuenta los criterios de ahorro energético al comprar nuevos frigoríficos, lavadoras, etc.
+ <br>
+<b> 8.-</b>  Usa bombillas LED que duran mucho más que las bombillas  tradicionales y que inclusiva las fluorescentes. Son de bajo consumo de energía para dar la misma cantidad de luz, con lo cual se termina ahorrando dinero y colaborando con el medio ambiente.
+<br>
+<b>9.- </b> Evita los aerosoles que contienen CFCs y que son causantes de la destrucción de la capa de ozono, u otros gases que también contribuyen al efecto invernadero. Los pulverizadores son una buena alternativa y son recargables.
+ <br>
+<b> 10.-</b> La gran mayoría de los productos de limpieza que se anuncian no sólo son innecesarios sino también muy nocivos para el medio ambiente. Casi toda la casa puede quedar perfectamente limpia con jabón, bicarbonato, vinagre y limón.
+ 
+ 
+ </div>
+ </div>
+ 
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <h4> <strong>App5</strong><br>"Cruz Solis Rodolfo"</h4>
+  </div>
+ </div>
+ </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1><font face="DotumChe">Tipos de contaminación</font></h1>
+ </div>
+ <div data-role="content">
+ <div>
+	Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares.<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/v2.jpg',1)"><img src="imagenes/v1.jpg" align="right" width="100" height="82" id="Image11"></a>Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de <br>la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son:
+ <div data-role="collapsible" data-content-theme="false">
+<h1>AGUA</h1>
+<div>
+<img src="imagenes/agua.png" align="left">
+<center>El recurso agua es cada vez más apreciado, tanto para uso doméstico industrial o agrícola. Su escasez, sobre todo en las zonas áridas y semiáridas, la sitúan como prioridad vital para el desarrollo de las poblaciones: "si no hay agua, no hay vida".</center> 
+</div>
+</div>
+
+ <div data-role="collapsible" data-content-theme="false">
+<h1>AIRE</h1>
+<div>
+<img src="imagenes/aire.png" align="left">
+<center>El dióxido de carbono, un gas de efecto invernadero, es el contaminante que está causando en mayor medida el calentamiento de la Tierra. Si bien todos los seres vivos emiten dióxido de carbono al respirar, éste se considera por lo general contaminante cuando se asocia con coches, aviones, centrales eléctricas y otras actividades humanas que requieren el uso de combustibles fósiles como la gasolina y el gas natural. </center> 
+</div>
+</div>
+
+<div data-role="collapsible" data-content-theme="false">
+<h1>SUELO</h1>
+<div>
+<img src="imagenes/suelo.png" align="left">
+<center>Esta contaminación generalmente aparece al producirse una ruptura de tanques de almacenamiento subterráneo, aplicación de pesticidas, filtraciones de rellenos sanitarios o de acumulación directa de productos industriales. Los químicos más comunes incluyen hidrocarburos de petróleo, solventes, pesticidas y otros metales pesados.</center> 
+</div>
+</div>
+
+<div data-role="collapsible" data-content-theme="false">
+<h1>AUIDITIVA</h1>
+<div>
+<img src="imagenes/auditiva.png" align="left">
+<center>Considerada por la población de las grandes ciudades como un factor medioambiental muy importante que afecta a su calidad de vida–, puede definirse como el incremento significativo de los niveles acústicos del medio. En realidad, esta contaminación ambiental urbana o ruido ambiental es una consecuencia directa no deseada de nuestras propias actividades en la gran ciudad, ya que toda emisión sonora es una fuente contaminante potencial que puede generar problemas puntuales si no se toman las precauciones mínimas.</center> 
+</div>
+</div>
+
+ </div>
+ </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <h4> <strong>App5</strong><br>"Cruz Solis Rodolfo"</h4>
+  </div>
+ </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1><font face="DotumChe">Mi comunidad</font></h1>
+ </div>
+ <div data-role="content">
+ <div>
+   Uno de los problemas mas grandes en mi comunidad es la basura, basura por aquí basura por allá. Lo usual es sacar la basura por la noche para que nadie los vea y la colocan en las esquina, pero eso no es mayor problema el problema llega cuando los perros rompen las bolsa y alborotan la basura.
+ <br>Todos sacan su basura pero nadie se preocupa por recogerla. ”Ayudemos a  cambiar el planeta menos basura mas vida”. 
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexvisor.html" style="width:640px;height:150px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+   
+   
+   
+ </div>
+ </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <h4> <strong>App5</strong><br>"Cruz Solis Rodolfo"</h4>
+  </div>
+ </div>
+ </div>
+ </div>
+ 
+  
+ </body>
+</html>
